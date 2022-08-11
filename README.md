@@ -1,4 +1,4 @@
-# postfix-with-ansible-tower-for-rhel8-centos-8
+# Postfix Installation for Ansible Tower (RHEL8 /CentOS 8)
 
 Installing Postfix
 ```
@@ -100,6 +100,9 @@ In `PORT`, enter the port of postfix which is 25 in this case.
 
 In `EMAIL OPTIONS`, select `Use TLS`
 and save it!
+
+![image](https://user-images.githubusercontent.com/24843193/184133690-a297d4ae-3e05-47cd-8239-b1d38895b46a.png)
+
 
 In order to activate notifications for each Project/Template, select one, go to notification section and turn on each notification as per your requirement.
 And BOOM! Everything works as intended! 
