@@ -61,3 +61,13 @@ sudo chown root:root /etc/postfix/sasl_passwd /etc/postfix/sasl_passwd.db
 ```
 sudo chmod 0600 /etc/postfix/sasl_passwd /etc/postfix/sasl_passwd.db
 ```
+
+# Start and enable Postfix to run on system boot
+```
+systemctl enable --now  postfix
+```
+
+Check status of Postfix
+```
+systemctl status postfix
+```
