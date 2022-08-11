@@ -20,6 +20,8 @@ Use below command to see configs of postfix
 postconf
 ```
 
+# Configuring Postfix
+
 Confirm that the myhostname parameter is configured with your server’s FQDN: Path is `/etc/postfix/main.cf` and parameter is
 ```
 myhostname = fqdn.example.com
@@ -33,7 +35,6 @@ inet_interfaces = all
 
 Setup the following configs
 ```
-
 relayhost = [smtp.gmail.com]:587
 smtp_sasl_auth_enable = yes
 smtp_sasl_password_maps = hash:/etc/postfix/sasl_passwd
