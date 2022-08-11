@@ -82,3 +82,23 @@ To see if mailing is working, use following command
 ```
 tail -f /vat/log/maillog
 ```
+# Configuration on Ansible-Tower
+
+Go to the Ansible-Tower only after all the above successful configs.
+Under 'Administration' section, select 'Notifications' from left pane.
+Under 'Notification Templates', select `+` green icon to add a new template.
+Give a name. select organization and choose `Mail` in TYPE options.
+In `HOST`, enter the hostname of the machine.
+In `SENDER MAIL`, enter the mail from postfix configs.
+In `RECEPIENTS LIST`, enter the recepients emails one by one.
+In `PORT`, enter the port of postfix which is 25 in this case.
+In `EMAIL OPTIONS`, select `Use TLS`
+and save it!
+
+In order to activate notifications for each Project/Template, select one, go to notification section and turn on each notification as per your requirement.
+And BOOM! Everything works as intended! 
+(Atleast for me!😎)
+
+# References
+https://kifarunix.com/configure-postfix-to-use-gmail-smtp-on-centos-8/
+https://www.linode.com/docs/guides/configure-postfix-to-send-mail-using-gmail-and-google-workspace-on-debian-or-ubuntu/
