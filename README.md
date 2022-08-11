@@ -72,3 +72,13 @@ Check status of Postfix
 ```
 systemctl status postfix
 ```
+
+# Send a Test Mail to Verify Postfix Gmail SMTP Relay (Without 2FA)
+```
+echo "Test Postfix Gmail SMTP Relay" | mail -s "Postfix Gmail SMTP Relay" youremail@gmail.com
+```
+
+To see if mailing is working, use following command
+```
+tail -f /vat/log/maillog
+```
