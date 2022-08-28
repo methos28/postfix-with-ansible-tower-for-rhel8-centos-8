@@ -80,7 +80,7 @@ echo "Test Postfix Gmail SMTP Relay" | mail -s "Postfix Gmail SMTP Relay" yourem
 
 To see if mailing is working, use following command
 ```
-tail -f /vat/log/maillog
+tail -f /var/log/maillog
 ```
 # Configuration on Ansible-Tower
 
